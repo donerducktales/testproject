@@ -36,7 +36,7 @@ export default function Header() {
                      <Link href={''}>Blog</Link>
                   </li>
                   <li>
-                     <Link href={''}>Single Post</Link>
+                     <Link href={'/singlepost'}>Single Post</Link>
                   </li>
                   <li>
                      <Link href={''}>Pages</Link>
@@ -80,7 +80,7 @@ export default function Header() {
                         <Link href={''}>Blog</Link>
                      </li>
                      <li>
-                        <Link href={''}>Single Post</Link>
+                        <Link href={'/singlepost'}>Single Post</Link>
                      </li>
                      <li>
                         <Link href={''}>Pages</Link>

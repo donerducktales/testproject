@@ -1,7 +1,7 @@
-export default function Home() {
+export default function SinglePost() {
    return (
       <main className="main">
-         home
+         singlepost
       </main>
    );
 }
