@@ -1,0 +1,147 @@
+header {
+   max-width: 1198px;
+   width: 100%;
+   height: 70px;
+   display: flex;
+   padding: 0 10px;
+}
+
+.header_container {
+   max-width: 1198px;
+   height: 174px;
+   display: flex;
+   flex: 1 1 100%;
+   justify-content: center;
+}
+
+.nav_links {
+   display: flex;
+   flex: 1 1 100%;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav_logo {
+   display: flex;
+   justify-content: flex-start;
+}
+
+.nav_buttons {
+   display: flex;
+   gap: 40px;
+   list-style-type: none;
+   align-items: center;
+}
+
+.nav_buttons a {
+   color: #3B3C4A;
+   font-size: 1rem;
+}
+
+.nav_instruments {
+   display: flex;
+   justify-content: flex-end;
+   gap: 40px;
+   align-items: center;
+}
+
+.search-panel {
+   background-color: #f4f4f5;
+   width: 166px;
+   height: 36px;
+   border-radius: 5px;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+}
+
+.search-panel > input {
+   width: 114px;
+   height: 30px;
+   background-color: #f4f4f5;
+   border: none;
+   outline: none;
+   padding-right: 20px;
+   position: relative;
+   left: 10px;
+   color: #3B3C4A;
+}
+
+.search-icon {
+   z-index: 9;
+   position: relative;
+}
+
+.dark-mode {
+   width: 48px;
+   height: 28px;
+   background-color: #E8E8EA;
+   border-radius: 100px;
+   cursor: pointer;
+}
+
+.nav_mobile-menu-btn {
+   display: none;
+}
+
+.nav_mobile-menu {
+   display: none;
+}
+
+
+@media (max-width: 1024px) {
+   .nav_buttons {
+      display: none;
+   }
+
+   .nav_instruments {
+      display: none;
+   }
+
+   .nav_mobile-menu-btn {
+      display: flex;
+      flex-direction: column;
+      border: none;
+      outline: none;
+      gap: 2px;
+      cursor: pointer;
+   }
+
+   .nav_mobile-menu-btn > span {
+      width: 28px;
+      height: 2px;
+      background-color: #3B3C4A;
+   }
+
+   .nav_mobile-menu.active {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 70px;
+      left: 2px;
+      padding-bottom: 25px;
+   }
+
+   .nav_buttons-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      list-style-type: none;
+      padding: 0;
+   }
+
+   .nav_buttons-mobile > li > a {
+      color: #3B3C4A;
+   }
+
+   .nav_instruments-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+   }
+}
