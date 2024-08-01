@@ -1,7 +1,18 @@
+import './home.css';
+
 export default function Home() {
    return (
       <main className="main">
-         home
+         <section className="page-title_section">
+            <h1>Page title</h1>
+            <div className="page-title_links">
+               <p>Home</p>
+               <p>Link One</p>
+            </div>
+         </section>
+         <section className="posts_section">
+            
+         </section>
       </main>
    );
 }

@@ -1,0 +1,29 @@
+.page-title_section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 60px;
+}
+
+.page-title_section > h1, p {
+   color: #181A2A;
+   margin: 0;
+}
+
+.page-title_section > h1 {
+   margin: 40px 0 8px 0;
+   font-size: 1.875rem;
+}
+
+.page-title_links {
+   display: flex;
+   flex-direction: row;
+   gap: 24px;
+   font-size: 1rem;
+}
+
+.posts_section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
