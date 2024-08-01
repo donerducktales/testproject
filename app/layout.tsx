@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/Header/Header";
-import { work_sans } from "./config/fonts";
+import { work_sans } from "./assets/fonts/fonts";
 
 
 export const metadata: Metadata = {

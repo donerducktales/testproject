@@ -3,9 +3,9 @@
 import Link from 'next/link';
 import '../Header/header.css'
 import Image from 'next/image';
-import navLogo from '@/public/img/header/nav-logo.svg';
-import searchIcon from '@/public/img/header/search-icon.svg';
-import { inter } from '@/app/config/fonts';
+import navLogo from '@/app/assets/img/header/nav-logo.svg';
+import searchIcon from '@/app/assets/img/header/search-icon.svg';
+import { inter } from '@/app/assets/fonts/fonts';
 import { useRef } from 'react';
 
 export default function Header() {

@@ -11,7 +11,9 @@ export default function Home() {
             </div>
          </section>
          <section className="posts_section">
-            
+            <div className="posts">
+               
+            </div>
          </section>
       </main>
    );
