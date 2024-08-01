@@ -1,3 +1,4 @@
+import Post from './components/Post/Post';
 import './home.css';
 
 export default function Home() {
@@ -12,7 +13,15 @@ export default function Home() {
          </section>
          <section className="posts_section">
             <div className="posts">
-               
+               <Post />
+               <Post />
+               <Post />
+               <Post />
+               <Post />
+               <Post />
+               <Post />
+               <Post />
+               <Post />
             </div>
          </section>
       </main>
