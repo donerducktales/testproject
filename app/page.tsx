@@ -1,5 +1,6 @@
 import Post from './components/Post/Post';
 import './home.css';
+import { postdata } from './shared/postdata';
 
 export default function Home() {
    return (
@@ -13,15 +14,9 @@ export default function Home() {
          </section>
          <section className="posts_section">
             <div className="posts">
-               <Post />
-               <Post />
-               <Post />
-               <Post />
-               <Post />
-               <Post />
-               <Post />
-               <Post />
-               <Post />
+               {postdata.map(elem => 
+                  <Post key={elem.id} title={elem.title} postType={elem.postType} />
+               )}
             </div>
          </section>
       </main>

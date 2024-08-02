@@ -1,16 +1,23 @@
+import Image from 'next/image';
 import '../Post/post.css';
 
-export default function Post() {
+interface PostProps {
+   postType: string,
+   title: string,
+   // imgLink: string,
+}
+
+export default function Post({title, postType}: PostProps) {
    return (
       <div className="post">
          <div className="post_cover">
-            smthg
+            fffff
          </div>
          <div className="post_type">
-            <p>technology</p>
+            <p>{postType}</p>
          </div>
          <div className="post_title">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, asperiores. Omnis</p>
+            <p>{title}</p>
          </div>
          <div className="post_author">
             <div className="author-avatar">
