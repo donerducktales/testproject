@@ -8,6 +8,7 @@ header {
 
 .header_container {
    max-width: 1238px;
+   width: 100%;
    height: 174px;
    display: flex;
    flex: 1 1 100%;

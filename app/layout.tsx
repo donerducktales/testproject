@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/Header/Header";
 import { work_sans } from "./assets/fonts/fonts";
-
+import Footer from "./components/Footer/Footer";
 
 export const metadata: Metadata = {
    title: "Home",
@@ -19,6 +19,7 @@ export default function RootLayout({
          <body className={work_sans.className}>
             <Header />
             {children}
+            <Footer />
          </body>
       </html>
    );

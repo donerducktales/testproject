@@ -1,4 +1,4 @@
-import { Inter, Work_Sans } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans, Work_Sans } from "next/font/google";
 
 export const work_sans = Work_Sans({
    subsets: ['latin'],
@@ -8,4 +8,9 @@ export const work_sans = Work_Sans({
 export const inter = Inter({
    subsets: ['latin'],
    weight: ['400'],
+});
+
+export const plus_jakarta_sans = Plus_Jakarta_Sans({
+   subsets: ['latin'],
+   weight: ['400', '600', '800'],
 });
