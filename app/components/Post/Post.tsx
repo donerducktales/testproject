@@ -4,14 +4,19 @@ import '../Post/post.css';
 interface PostProps {
    postType: string,
    title: string,
-   // imgLink: string,
+   imgLink: string,
 }
 
-export default function Post({title, postType}: PostProps) {
+export default function Post({title, postType, imgLink}: PostProps) {
    return (
       <div className="post">
          <div className="post_cover">
-            fffff
+            <Image 
+               src={imgLink}
+               alt='post cover'
+               width={360}
+               height={240}
+            />
          </div>
          <div className="post_type">
             <p>{postType}</p>

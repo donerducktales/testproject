@@ -15,7 +15,7 @@ export default function Home() {
          <section className="posts_section">
             <div className="posts">
                {postdata.map(elem => 
-                  <Post key={elem.id} title={elem.title} postType={elem.postType} />
+                  <Post key={elem.id} imgLink={elem.imgLink} title={elem.title} postType={elem.postType} />
                )}
             </div>
          </section>
