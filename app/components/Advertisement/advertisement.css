@@ -1,0 +1,12 @@
+.advertisement {
+   max-width: 750px;
+   width: 100%;
+   height: 100px;
+   /* background-color: #E8E8EA; */
+   margin: 0 10px 0 10px;
+   border-radius: 12px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}

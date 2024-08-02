@@ -1,6 +1,10 @@
+// import Image from 'next/image';
 import Post from './components/Post/Post';
 import './home.css';
 import { postdata } from './shared/postdata';
+// import postCardCover from '@/public/img/postCard/post-card-cover.png';
+import { work_sans } from './assets/fonts/fonts';
+import Advertisement from './components/Advertisement/Advertisement';
 
 export default function Home() {
    return (
@@ -12,6 +16,14 @@ export default function Home() {
                <p>Link One</p>
             </div>
          </section>
+         {/* <section className="post-card_section">
+            <Image 
+               src={postCardCover}
+               alt='post card cover'
+               width={1214}
+               height={450}
+            />
+         </section> */}
          <section className="posts_section">
             <div className="posts">
                {postdata.map(elem => 
@@ -25,7 +37,11 @@ export default function Home() {
                   />
                )}
             </div>
+            <button className={`${work_sans.className} load-more_button`}>
+               Load More
+            </button>
          </section>
+         <Advertisement background='#E8E8EA'/>
       </main>
    );
 }
