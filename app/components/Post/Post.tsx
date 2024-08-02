@@ -5,9 +5,11 @@ interface PostProps {
    postType: string,
    title: string,
    imgLink: string,
+   avatar: string,
+   name: string
 }
 
-export default function Post({title, postType, imgLink}: PostProps) {
+export default function Post({title, postType, imgLink, avatar, name}: PostProps) {
    return (
       <div className="post">
          <div className="post_cover">
@@ -16,6 +18,7 @@ export default function Post({title, postType, imgLink}: PostProps) {
                alt='post cover'
                width={360}
                height={240}
+               priority
             />
          </div>
          <div className="post_type">
@@ -26,10 +29,15 @@ export default function Post({title, postType, imgLink}: PostProps) {
          </div>
          <div className="post_author">
             <div className="author-avatar">
-
+               <Image 
+                  src={avatar}
+                  alt='avatar'
+                  width={36}
+                  height={36}
+               />
             </div>
             <div className="author-name">
-               <p>Name Lastname</p>
+               <p>{name}</p>
             </div>
             <div className="author-date">
                <p>01 August, 2024</p>

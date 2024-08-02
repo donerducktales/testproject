@@ -1,5 +1,8 @@
 .main {
    margin: 0 10px 0 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .page-title_section {
