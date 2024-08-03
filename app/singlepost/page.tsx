@@ -29,7 +29,17 @@ export default function SinglePost() {
                   </div>
                </div>
             </div>
+            <div className="blog-info_image">
+               <Image 
+                  src={beautifulBuilding}
+                  alt='beautifulBuilding'
+                  fill
+               />
+            </div>
          </section>
+         {/* <section className="paragraphs_section">
+
+         </section> */}
       </main>
    );
 }
