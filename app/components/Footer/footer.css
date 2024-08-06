@@ -255,6 +255,7 @@
       flex-direction: column;
       align-items: center;
       margin-bottom: 25px;
+      margin-top: 25px;
    }
 
    .copyright_logo > img {
