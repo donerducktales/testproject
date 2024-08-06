@@ -67,6 +67,7 @@ export default function Footer() {
                         fontWeight: '400',
                         fontSize: '1rem',
                         color: '#696A75',
+                        marginTop: '10px'
                      }}
                      >
                         Get blog articles and offers via email
@@ -82,6 +83,9 @@ export default function Footer() {
                         className='mail-icon'
                      />
                   </div>
+                  <button className={`${work_sans.className} email-form-panel_button`}>
+                     Subscribe
+                  </button>
                </div>
             </div>
             <div className="footer_copyright">
