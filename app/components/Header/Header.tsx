@@ -7,6 +7,7 @@ import navLogo from '@/public/img/header/nav-logo.svg';
 import searchIcon from '@/public/img/header/search-icon.svg';
 import { inter } from '@/app/assets/fonts/fonts';
 import { useRef } from 'react';
+import DarkModeButton from '../DarkModeButton/DarkModeButton';
 
 export default function Header() {
    const navRef = useRef<any>(null);
@@ -56,9 +57,7 @@ export default function Header() {
                         className='search-icon'
                      />
                   </div>
-                  <div className="dark-mode">
-                     
-                  </div>
+                  <DarkModeButton />
                </div>
                <div
                   className="nav_mobile-menu-btn"
@@ -100,9 +99,7 @@ export default function Header() {
                            className='search-icon'
                         />
                      </div>
-                     <div className="dark-mode">
-                        
-                     </div>
+                     <DarkModeButton />
                   </div>
                </div>
             </nav>

@@ -75,14 +75,6 @@ header {
    position: relative;
 }
 
-.dark-mode {
-   width: 48px;
-   height: 28px;
-   background-color: #E8E8EA;
-   border-radius: 100px;
-   cursor: pointer;
-}
-
 .nav_mobile-menu-btn {
    display: none;
 }
