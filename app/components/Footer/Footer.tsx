@@ -7,7 +7,7 @@ import footerLogoIcon from '@/public/img/footer/footer-logo.svg'
 export default function Footer() {
    return (
       <footer className={`${plus_jakarta_sans.className} footer`}>
-         <footer className="footer_container">
+         <div className="footer_container">
             <div className="footer_nav">
                <div className="about">
                   <div className="about_title">
@@ -109,7 +109,7 @@ export default function Footer() {
                   <p>Cookie Policy</p>
                </div>
             </div>
-         </footer>
+         </div>
       </footer>
    );
 }
